@@ -1,0 +1,139 @@
+.card {
+	position: relative;
+	border-radius: 1rem;
+    border: 2px solid var(--border-color);
+    padding: 5vw;
+	height: 20vw;
+	backdrop-filter: blur(8px);
+	background-color: #0084ff8f;
+}
+
+.card:hover {
+		transform: scale(1.02) ;
+		transition:  all 0.8s ;
+}
+
+.cardBtn {
+	position: absolute;
+	top: 0.25rem;
+	right: 0.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	border-radius: 9999px;
+	color: white;
+	cursor: pointer;
+	background-color: var(--btn-bkg-danger);
+    transition: background-color 300ms;
+
+}
+
+
+.cardBtn:hover {
+	background-color: var(--btn-bkg-danger-hover);
+	transform: scale(1.2) ;
+	transform: rotate(360deg);
+    transition:  all 0.8s ;
+}
+
+.card > section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.name {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.mainCard {
+	border-color: #ffffff;
+	background-color: #0084ff8f;
+	height: 30vw;
+
+}
+
+.mainCard .cardBtn {
+	display: none;
+}
+
+.mainCard .name {
+	text-align: left;
+	
+	font-size: 4vw;
+	color: #ffffff;
+}
+
+.mainCard > section {
+align-items: flex-start;
+}
+
+.mainCard > section > .temp {
+	color: rgb(255, 255, 255);
+	font-size: 4vw;
+	padding-top: 0rem;
+}
+
+.mainCard > section > img {
+	height: 6rem;
+	width: 6rem;
+
+}
+
+
+@media all and (max-width: 1200px) {
+.card {
+
+    padding: 5vw;
+
+	height: 30vw;
+}
+.mainCard .name {
+	font-size: 4vw;
+}
+
+.mainCard {
+	margin-top: 0rem;
+	border: 1px solid rgb(255, 240, 240);
+}
+
+}
+
+@media all and (max-width: 780px) {
+.card {
+
+    padding: 10vw;
+
+	height: 30rem;
+}
+.mainCard .name {
+	font-size: 10vw;
+}
+.mainCard {
+	margin-top: 1rem;
+	border: 1px solid rgb(255, 255, 255);
+}
+}
+
+@media all and (max-width: 500px) {
+.card {
+
+    padding: 10vw;
+
+	height: 20rem;
+}
+.mainCard .name {
+	font-size: 10vw;
+}
+
+.mainCard {
+	margin-top: 1rem;
+	border: 1px solid rgb(255, 0, 0);
+}
+
+}

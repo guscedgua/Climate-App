@@ -1,0 +1,47 @@
+.main {
+grid-template-columns: repeat(2, 1fr);
+display: grid;
+}
+
+
+.app, .mainCity {
+	margin-top: 1vw;
+	height: 100%;
+
+}
+
+.mainCity {
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.reelCities {
+	margin-top: 1vw;
+	display: flex;
+	justify-content: center;
+
+}
+
+@media all and (max-width: 1200px) {
+.main {
+grid-template-columns: repeat(1, 1fr);
+display: grid;
+}
+
+.mainCity {
+	display: flex;
+	justify-content: center;
+
+}
+
+.reelCities {
+	margin-top: 1px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+}
+
